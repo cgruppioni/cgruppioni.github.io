@@ -1,26 +1,59 @@
-h1.full-name {
-  text-align: center;
-  margin: 30px 0 60px 0;
+body {
+  background-color: lighten($main-color, 20%);
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  padding: 20px 0 20px 0;
+  background-color: white;
+
+  h1.full-name {
+    text-align: center;
+    text-decoration: none;
+    font-family: $pacifico;
+
+    a:link, a:visited, a:hover, a:active {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a:link, a:visited, a:hover, a:active{
+      color: darken($main-color, 30%);
+      font-family: $open-sans;
+      text-decoration: underline;
+    }
+  }
+}
+
+hr {
+  border-width: 3px;
 }
 
 .container {
+  padding: 20px 15px;
   display: flex;
-}
+  align-items: center;
+  justify-content: center;
+  background-color: lighten($main-color, 20%);
+  font-family: $open-sans;
+  font-weight: lighter;
 
-.bio {
-  margin: 0 40px 0 40px;
-}
+  p {
+    text-indent: 23px;
+  }
 
-@include media-breakpoint-up(md) {
-  .bio {
-    flex: 0 1 50%;
-    min-height: 100px;
-    max-width: 50%;
+  @include media-breakpoint-up(lg) {
+    .bio {
+      flex: 0 1 75%;
+      min-height: 100px;
+      max-width: 75%;
+      padding: 0px 30px;
+    }
   }
 }
+

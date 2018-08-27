@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalWebsite2018</title>
+    <title>Casey Gruppioni</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Lateef|Marck+Script|Merienda|Pacifico|Satisfy|Sue+Ellen+Francisco" rel="stylesheet">
   </head>
 
   <body>
+    <div class="header">
+      <h1 class="full-name"><%= link_to "Casey Gruppioni", root_path %></h1>
+      <div class="navbar"><%= link_to 'about', page_path('about') %></div>
+    </div>
+    <hr>
     <%= yield %>
   </body>
 </html>
