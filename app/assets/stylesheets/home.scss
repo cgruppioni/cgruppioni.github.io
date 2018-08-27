@@ -23,9 +23,8 @@ body {
     align-items: center;
 
     a:link, a:visited, a:hover, a:active{
-      color: darken($main-color, 30%);
-      font-family: $open-sans;
-      text-decoration: underline;
+      font-family: $oswald;
+      text-shadow: 2px 2px 8px;
     }
   }
 }
