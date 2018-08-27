@@ -26,6 +26,10 @@ body {
       font-family: $open-sans;
       text-shadow: 2px 2px 8px;
     }
+
+    .link {
+      padding-right: 15px;
+    }
   }
 }
 
@@ -40,7 +44,7 @@ hr {
   justify-content: center;
   background-color: lighten($main-color, 20%);
   font-family: $open-sans;
-  font-weight: lighter;
+  font-weight: 500;
 
   p {
     text-indent: 23px;
