@@ -3,12 +3,13 @@ body {
 }
 
 .header {
-  padding: 20px 0 20px 0;
+  margin: 20px 0;
 
   h1.full-name {
     text-align: center;
     text-decoration: none;
-    font-family: $pacifico;
+    font-family: $main-font-family;
+    margin: 0;
 
     a:link, a:visited, a:hover, a:active {
       color: white;
@@ -22,8 +23,7 @@ body {
     align-items: center;
 
     a:link, a:visited, a:hover, a:active{
-      font-family: $open-sans;
-      text-shadow: 2px 2px 8px;
+      font-family: $main-font-family;
     }
 
     .link {
@@ -41,7 +41,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $open-sans;
+  font-family: $main-font-family;
   font-weight: 500;
 
   p {
