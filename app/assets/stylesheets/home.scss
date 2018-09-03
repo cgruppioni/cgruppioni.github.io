@@ -1,10 +1,9 @@
 body {
-  background-color: lighten($main-color, 20%);
+  background-color: $main-color;
 }
 
 .header {
   padding: 20px 0 20px 0;
-  background-color: white;
 
   h1.full-name {
     text-align: center;
@@ -12,7 +11,7 @@ body {
     font-family: $pacifico;
 
     a:link, a:visited, a:hover, a:active {
-      color: $main-color;
+      color: white;
       text-decoration: none;
     }
   }
@@ -42,7 +41,6 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lighten($main-color, 20%);
   font-family: $open-sans;
   font-weight: 500;
 
