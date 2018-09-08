@@ -1,18 +1,28 @@
+
 body {
-  background-color: lighten($main-color, 20%);
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
 }
 
 .header {
-  padding: 20px 0 20px 0;
-  background-color: white;
+  padding: 20px 0;
+  background-image: $background-image;
+  background-size: 100%;
+  border-style: solid;
+  border-width: 0 0 5px 0;
 
   h1.full-name {
     text-align: center;
     text-decoration: none;
-    font-family: $pacifico;
+    font-family: $main-font-family;
+    font-size: 63px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
 
     a:link, a:visited, a:hover, a:active {
-      color: $main-color;
+      color: white;
       text-decoration: none;
     }
   }
@@ -24,7 +34,8 @@ body {
 
     a:link, a:visited, a:hover, a:active{
       font-family: $open-sans;
-      text-shadow: 2px 2px 8px;
+      color: white;
+      text-shadow: 2px 2px grey;
     }
 
     .link {
@@ -42,9 +53,12 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lighten($main-color, 20%);
   font-family: $open-sans;
   font-weight: 500;
+
+  a {
+    color: $link-color;
+  }
 
   p {
     text-indent: 23px;
