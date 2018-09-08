@@ -1,23 +1,28 @@
+
 body {
   background-color: $main-color;
-  background-image: $main-background-image;
   background-repeat: no-repeat;
   background-size: 100%;
+  color: white;
 }
 
 .header {
-  margin: 20px 0;
+  padding: 20px 0;
+  background-image: $background-image;
+  background-size: 100%;
+  border-style: solid;
+  border-width: 0 0 5px 0;
 
   h1.full-name {
     text-align: center;
     text-decoration: none;
     font-family: $main-font-family;
-    margin: 28px 0 10px 0;
     font-size: 63px;
     font-weight: bold;
+    text-shadow: 2px 2px black;
 
     a:link, a:visited, a:hover, a:active {
-      color: black;
+      color: white;
       text-decoration: none;
     }
   }
@@ -29,7 +34,8 @@ body {
 
     a:link, a:visited, a:hover, a:active{
       font-family: $open-sans;
-      color: black;
+      color: white;
+      text-shadow: 2px 2px grey;
     }
 
     .link {
