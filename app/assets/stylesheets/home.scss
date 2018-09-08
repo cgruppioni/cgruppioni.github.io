@@ -56,6 +56,10 @@ hr {
   font-family: $open-sans;
   font-weight: 500;
 
+  a {
+    color: $link-color;
+  }
+
   p {
     text-indent: 23px;
   }
